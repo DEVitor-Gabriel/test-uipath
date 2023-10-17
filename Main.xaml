@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="962,2386" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ss="clr-namespace:System.Security;assembly=System.Private.CoreLib" xmlns:uaa="clr-namespace:UiPath.Azure.Activities;assembly=UiPath.Azure.Activities" xmlns:uac="clr-namespace:UiPath.Azure.Core;assembly=UiPath.Azure" xmlns:uam="clr-namespace:UiPath.Azure.Models;assembly=UiPath.Azure" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+﻿<Activity mc:Ignorable="sap sap2010" x:Class="Main" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="962,2499" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ss="clr-namespace:System.Security;assembly=System.Private.CoreLib" xmlns:uaa="clr-namespace:UiPath.Azure.Activities;assembly=UiPath.Azure.Activities" xmlns:uac="clr-namespace:UiPath.Azure.Core;assembly=UiPath.Azure" xmlns:uam="clr-namespace:UiPath.Azure.Models;assembly=UiPath.Azure" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -111,7 +111,7 @@
       <AssemblyReference>System.Net.WebHeaderCollection</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="588,2321" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="588,2434" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Default="BkP8Q~S1HHL6sgsIhry1ws7exngG_tj0viAH_bst" Name="strSecretValue" />
       <Variable x:TypeArguments="x:String" Default="3a51045f-83d0-453d-9e3d-6a0d3f432007" Name="secretId" />
@@ -159,13 +159,13 @@
         </InArgument>
       </Assign.Value>
     </Assign>
-    <uaa:AzureScope ClientId="af7e7836-c2e6-4c2b-8d62-a87793d57417" DisplayName="Azure Scope" EnvironmentType="Global" sap:VirtualizedContainerService.HintSize="526,1844" sap2010:WorkflowViewState.IdRef="AzureScope_1" SubscriptionId="31e4a1b4-c0d5-4c54-aaa2-1e2fff23a1ab" TenantId="470e221b-5114-4a50-9e15-7cf4897094cf">
+    <uaa:AzureScope ClientId="af7e7836-c2e6-4c2b-8d62-a87793d57417" DisplayName="Azure Scope" EnvironmentType="Global" sap:VirtualizedContainerService.HintSize="526,1957" sap2010:WorkflowViewState.IdRef="AzureScope_1" SubscriptionId="31e4a1b4-c0d5-4c54-aaa2-1e2fff23a1ab" TenantId="470e221b-5114-4a50-9e15-7cf4897094cf">
       <uaa:AzureScope.Body>
         <ActivityAction x:TypeArguments="uac:AzureCmd">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="uac:AzureCmd" Name="AzureScopePropertyTag" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="492,1555" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="492,1668" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="uam:StorageAccount" Name="storageAccount" />
               <Variable x:TypeArguments="uam:BlobContainer" Name="blobContainer" />
@@ -175,7 +175,7 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uaa:AzureGetStorageAccount ConnectionClient="{x:Null}" ConnectionId="{x:Null}" DisplayName="Get Storage Account" sap:VirtualizedContainerService.HintSize="450,141" sap2010:WorkflowViewState.IdRef="AzureGetStorageAccount_1" ResourceGroupName="CSF_DATALA" StorageAccountName="csfdatalakeprd" UseConnectionService="True">
+            <uaa:AzureGetStorageAccount ConnectionClient="{x:Null}" ConnectionId="{x:Null}" DisplayName="Get Storage Account" sap:VirtualizedContainerService.HintSize="450,141" sap2010:WorkflowViewState.IdRef="AzureGetStorageAccount_1" ResourceGroupName="CSF_DATALAK" StorageAccountName="csfdatalakeprd" UseConnectionService="True">
               <uaa:AzureGetStorageAccount.StorageAccount>
                 <OutArgument x:TypeArguments="uam:StorageAccount">
                   <CSharpReference x:TypeArguments="uam:StorageAccount" sap2010:WorkflowViewState.IdRef="CSharpReference`1_2">storageAccount</CSharpReference>
@@ -235,7 +235,7 @@
                 </InArgument>
               </uaa:AzureUploadBlobFromFile.FileToUpload>
             </uaa:AzureUploadBlobFromFile>
-            <ui:CommentOut DisplayName="Atividades desabilitadas" sap:VirtualizedContainerService.HintSize="450,52" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+            <ui:CommentOut DisplayName="Atividades desabilitadas" sap:VirtualizedContainerService.HintSize="450,165" sap2010:WorkflowViewState.IdRef="CommentOut_1">
               <ui:CommentOut.Body>
                 <Sequence DisplayName="Atividades Ignoradas" sap:VirtualizedContainerService.HintSize="416,80" sap2010:WorkflowViewState.IdRef="Sequence_3">
                   <sap:WorkflowViewStateService.ViewState>
@@ -247,7 +247,7 @@
               </ui:CommentOut.Body>
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
