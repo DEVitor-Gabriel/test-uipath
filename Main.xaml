@@ -175,7 +175,7 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uaa:AzureGetStorageAccount ConnectionClient="{x:Null}" ConnectionId="{x:Null}" DisplayName="Get Storage Account" sap:VirtualizedContainerService.HintSize="450,141" sap2010:WorkflowViewState.IdRef="AzureGetStorageAccount_1" ResourceGroupName="CSF_DATALAKE" StorageAccountName="csfdatalakeprd" UseConnectionService="True">
+            <uaa:AzureGetStorageAccount ConnectionClient="{x:Null}" ConnectionId="{x:Null}" DisplayName="Get Storage Account" sap:VirtualizedContainerService.HintSize="450,141" sap2010:WorkflowViewState.IdRef="AzureGetStorageAccount_1" ResourceGroupName="CSF_DATALA" StorageAccountName="csfdatalakeprd" UseConnectionService="True">
               <uaa:AzureGetStorageAccount.StorageAccount>
                 <OutArgument x:TypeArguments="uam:StorageAccount">
                   <CSharpReference x:TypeArguments="uam:StorageAccount" sap2010:WorkflowViewState.IdRef="CSharpReference`1_2">storageAccount</CSharpReference>
